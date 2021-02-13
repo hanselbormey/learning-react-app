@@ -9,10 +9,12 @@ import {
 } from "react-router-dom";
 
 import { SnackbarProvider } from 'notistack';
-
 import GatewayList from './componentes/gateway/GatewayList';
 import GatewayEdit from './componentes/gateway/GatewayEdit';
 import GatewayAdd from './componentes/gateway/GatewayAdd';
+import DataTable from './componentes/muiDatatable/dataTable';
+import CustomDataTable from './componentes/customDataTable';
+import CustomIcons from './componentes/customIcons';
 import Parent from './componentes/Boxes.js/Parent';
 import Rating from './componentes/rating/Rating';
 import Routes from './componentes/routes/Routes';
@@ -44,6 +46,15 @@ function App() {
                   <li>
                     <Link to="/routes">React router</Link>
                   </li>
+                  <li>
+                    <Link to="/data-table">MuiDataTable</Link>
+                  </li>
+                  <li>
+                    <Link to="/custom-data-table">My dataTable</Link>
+                  </li>
+                  <li>
+                    <Link to="/custom-icons">My custom icons</Link>
+                  </li>
                 </ul>
               </nav>
             </header>
@@ -55,6 +66,9 @@ function App() {
                 <Route path="/parent" component={Parent} />
                 <Route path="/context" component={Rating} />
                 <Route path="/routes" component={Routes} />
+                <Route path="/data-table" component={DataTable} />
+                <Route path="/custom-data-table" component={CustomDataTable} />
+                <Route path="/custom-icons" component={CustomIcons} />
               </Switch>
             </main>
           </Router>
