@@ -14,6 +14,8 @@ import GatewayEdit from './componentes/gateway/GatewayEdit';
 import GatewayAdd from './componentes/gateway/GatewayAdd';
 import DataTable from './componentes/muiDatatable/dataTable';
 import CustomDataTable from './componentes/customDataTable';
+// import CustomDataTable from './componentes/customDataTable/example1/TableExample1';
+// import locale_en from 'react-intl/locale-data/en';
 import CustomIcons from './componentes/customIcons';
 import Parent from './componentes/Boxes.js/Parent';
 import Rating from './componentes/rating/Rating';

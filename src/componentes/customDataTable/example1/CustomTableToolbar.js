@@ -26,17 +26,17 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const MultipleSelectionSection = ({ selectedRows }) => {
+const MultipleSelectionSection = ({ totalSelectedRows }) => {
 
   const classes = useStyles();
 
   return (
     <Fragment>
-      {selectedRows > 0 && (
+      {totalSelectedRows > 0 && (
         <div>
           <Divider variant="middle" />
           <div className={classes.secondarySection}>
-            <div>{`${selectedRows} selected rows`}</div>
+            <div>{`${totalSelectedRows} selected rows`}</div>
             <div>
               <LinkIcon />
               <LinkOffIcon />
@@ -49,7 +49,7 @@ const MultipleSelectionSection = ({ selectedRows }) => {
 };
 
 export default function CustomTableToolbar(props) {
-  const { selectedRows } = props;
+  const { totalSelectedRows } = props;
   const classes = useStyles();
 
   return (
@@ -59,7 +59,7 @@ export default function CustomTableToolbar(props) {
         <AddCircleOutlineIcon />
         <FilterListIcon />
       </div>
-      <MultipleSelectionSection selectedRows={selectedRows} />
+      <MultipleSelectionSection totalSelectedRows={totalSelectedRows} />
     </div>
   );
 }

@@ -12,11 +12,13 @@ import NestedRoute2 from './NestedRoute2';
 
 function Routes(props) {
     const { path, url } = useRouteMatch();
+    debugger;
 
     return (
         <div>
             {/* <h1>Testing React Router</h1> */}
             <Switch>
+                {console.log(path)}
                 <Route exact path={path}>
                     <h3>Parent List</h3>
                     <ul>
