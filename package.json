@@ -9,14 +9,19 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "axios": "^0.19.2",
     "handlebars": "^4.7.2",
+    "jquery": "^3.6.0",
     "mui-datatables": "^3.1.4",
     "notistack": "^0.9.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-horizontal-scrolling-menu": "^2.5.0",
     "react-intl": "^5.20.10",
+    "react-multi-carousel": "^2.6.5",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-uuid": "^1.0.2"
+    "react-slick": "^0.28.1",
+    "react-uuid": "^1.0.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
